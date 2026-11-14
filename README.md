@@ -45,7 +45,7 @@ Aethervox/
 ## 🗺️ Feuille de Route Modulaire
 
 - [x] **Module 0 : Initialisation & Structure professionnelle** (Architecture, venv, packaging, Git)
-- [ ] **Module 1 : Modèle & Persistance** (Base SQLite, CRUD des sessions et des règles)
+- [x] **Module 1 : Modèle & Persistance** (Base SQLite WAL, Pydantic v2, DAO/Repositories complets)
 - [ ] **Module 2 : Moteur de Planification** (Algorithme de génération sous contraintes)
 - [ ] **Module 3 : Sentinelle Système** (Surveillance des processus et notifications toast)
 - [ ] **Module 4 : Démon Tray & Autostart** (Intégration barre des tâches et démarrage Windows)

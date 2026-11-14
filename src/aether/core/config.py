@@ -32,8 +32,12 @@ class Config:
         try:
             self.app_data_dir.mkdir(parents=True, exist_ok=True)
             self.logs_dir.mkdir(parents=True, exist_ok=True)
+            # Vérification des droits d'écriture réels
+            probe = self.app_data_dir / ".probe"
+            probe.write_text("ok", encoding="utf-8")
+            probe.unlink(missing_ok=True)
         except (PermissionError, OSError):
-            # Fallback to local directory inside project or user home for portable/dev environments
+            # Fallback vers le répertoire local du projet en environnement restreint/portable
             fallback_dir = self.base_dir.parent.parent / ".aether_data"
             self.app_data_dir = fallback_dir
             self.app_data_dir.mkdir(parents=True, exist_ok=True)
