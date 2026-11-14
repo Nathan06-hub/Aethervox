@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aether"
+version = "0.1.0"
+description = "Gestionnaire dynamique de sessions de travail et de discipline numérique pour Windows."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "Nathan" }
+]
+dependencies = [
+    "customtkinter>=5.2.0",
+    "psutil>=5.9.0",
+    "pystray>=0.19.5",
+    "Pillow>=10.0.0",
+    "windows-toasts>=1.1.0",
+    "pydantic>=2.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "black>=24.0.0",
+    "flake8>=7.0.0",
+]
+
+[project.scripts]
+aether = "aether.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]

@@ -1,0 +1,15 @@
+# Interface graphique moderne Desktop
+customtkinter>=5.2.0
+
+# Surveillance et contrôle des processus OS
+psutil>=5.9.0
+
+# Intégration System Tray (barre des tâches Windows)
+pystray>=0.19.5
+Pillow>=10.0.0
+
+# Notifications natives Windows 10/11
+windows-toasts>=1.1.0
+
+# Validation des données et modèles de planification
+pydantic>=2.5.0
