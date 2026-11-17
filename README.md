@@ -1,6 +1,8 @@
 # Æther ⏳🛡️
 
 > **Système intelligent et autonome de gestion des sessions d'études, de divertissement et de discipline numérique pour Windows.**
+>
+> 🚧 **Statut : Projet en développement actif** (Modules d'architecture et de persistance finalisés — moteurs de planification et sentinelle en cours de développement).
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg?logo=python)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6.svg?logo=windows)](https://www.microsoft.com/windows)
